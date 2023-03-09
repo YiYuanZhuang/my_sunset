@@ -2,14 +2,47 @@
 <html>
   <head>
     <title>My Webpage</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      #myimage {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      #mysong {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 10px;
+      }
+      #mytext {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 10px;
+        font-size: 24px;
+        color: pink;
+        text-shadow: 2px 2px 4px #000000;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to my Webpage</h1>
-    <img src="sunset.jpg" alt="My Image">
-    <br>
-    <audio controls>
-      <source src="meet.m4a" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    <div id="container">
+      <img id="myimage" src="sunset.jpg" alt="My Image">
+      <audio id="mysong" controls>
+        <source src="meet.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+      <div id="mytext">FALL with my sunset</div>
+    </div>
   </body>
 </html>
+
